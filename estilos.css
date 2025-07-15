@@ -1,1 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1c1c2e;
+  color: white;
+  margin: 0;
+  padding: 2rem;
+}
 
+h1 {
+  text-align: center;
+  color: #d1b3ff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.semestre {
+  background-color: #2a2a40;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.semestre h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #e0c7ff;
+}
+
+.ramo {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.4rem;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #5e3d92;
+  color: white;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color 0.2s;
+}
+
+.ramo.locked {
+  background-color: #444;
+  color: #999;
+  cursor: not-allowed;
+}
+
+.ramo.approved {
+  background-color: #7e57c2;
+  color: white;
+  font-weight: bold;
+}
